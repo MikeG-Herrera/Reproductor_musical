@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Canciones</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="reproductor.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="lista-canciones">
+            <h1>LISTA DE CANCIONES</h1>
+            <ol id="lista-de-canciones">
+                <li><a href="#" onclick="miReproductor.play(0)">Si una vez - En Vivo Desde Monterrey</a></li>
+                <li><a href="#" onclick="miReproductor.play(1)">Happy Now?</a></li>
+                <li><a href="#" onclick="miReproductor.play(2)">Rosa Pastel</a></li>
+                <li><a href="#" onclick="miReproductor.play(3)">idontwannabeyouanymore</a></li>
+                <li><a href="#" onclick="miReproductor.play(4)">My Immortal</a></li>
+                <li><a href="#" onclick="miReproductor.play(5)">Im Not Okay (I Promise)</a></li>
+                <li><a href="#" onclick="miReproductor.play(6)">Take On Me - MTV Unplugged</a></li>
+                <li><a href="#" onclick="miReproductor.play(7)">Ptazeta: Bzrp Music Sessions, Vol. 45</a></li>
+                <li><a href="#" onclick="miReproductor.play(8)">Lola</a></li>
+                <li><a href="#" onclick="miReproductor.play(9)">We Are Young (ft. Janelle Monáe)</a></li>
+                <li><a href="#" onclick="miReproductor.play(10)">Selección Natural</a></li>
+                <li><a href="#" onclick="miReproductor.play(11)">BABY HELLO</a></li>
+                <li><a href="#" onclick="miReproductor.play(12)">Fado</a></li>
+                <li><a href="#" onclick="miReproductor.play(13)">Judas</a></li>
+                <li><a href="#" onclick="miReproductor.play(14)">Tu Falta de Querer</a></li>
+            </ol>
+        </div>
+        <div class="reproductor">
+            <div class="portada">
+                <img id="portada-album" src="https://images.vexels.com/media/users/3/163240/isolated/preview/2f5a168ac9a6765dc5edfeb0b375d2ef-musica-icono-de-nota-musical.png" alt="Portada del álbum">
+            </div>
+            <div class="informacion-cancion">
+                <h3 id="titulo-cancion"></h3>
+                <p id="artista-cancion"></p>
+                <p id="album-cancion"></p>
+                <p id="duracion-cancion"></p>
+            </div>
+            <div class="controles">
+                <button id="btn-reproducir-pausar" onclick="miReproductor.playPause()">Reproducir/Pausar</button>
+                <button id="btn-detener" onclick="miReproductor.stop()">Detener</button>
+                <button id="btn-aleatorio" onclick="miReproductor.shuffle()">Aleatorio</button>
+                <button id="btn-siguiente" onclick="miReproductor.next()">Siguiente</button>
+                <button id="btn-anterior" onclick="miReproductor.prev()">Anterior</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
